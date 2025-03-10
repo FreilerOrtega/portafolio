@@ -59,6 +59,6 @@ La estructura de este portafolio es la siguiente:
    git clone https://github.com/tu-usuario/portafolio.git
 
 
-** realizado por Freiler Ortega Estupiñan CC.1010075774, estudiante de campuslands
+realizado por Freiler Ortega Estupiñan CC.1010075774, estudiante de campuslands
 
 
