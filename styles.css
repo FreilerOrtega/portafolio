@@ -1,0 +1,263 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Cabecera */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header .header-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header .header-content p {
+    font-size: 20px;
+}
+
+/* Sección sobre mí */
+.about-section {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en pantallas pequeñas */
+}
+
+.profile-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #333;
+}
+
+/* Texto sobre la foto */
+.about-content p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Sección de proyectos */
+.projects-section {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Sección de habilidades */
+.skills-section {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.skills-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-section ul li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Sección de contacto */
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-section form {
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.contact-section form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-section form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-section form button:hover {
+    background-color: #555;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+
+/* Media Queries para responsive */
+@media screen and (max-width: 768px) {
+    header .header-content h1 {
+        font-size: 28px; /* Reducir tamaño del título */
+    }
+
+    header .header-content p {
+        font-size: 18px; /* Reducir tamaño del subtítulo */
+    }
+
+    .about-content {
+        flex-direction: column; /* La foto y el texto se apilan verticalmente */
+        gap: 10px;
+    }
+
+    .profile-photo {
+        width: 120px; /* Reducir tamaño de la foto */
+        height: 120px;
+    }
+
+    .about-section p {
+        font-size: 16px;
+    }
+
+    .projects-section h2,
+    .skills-section h2,
+    .contact-section h2 {
+        font-size: 24px; /* Reducir tamaño de los encabezados */
+    }
+
+    .skills-section ul li {
+        font-size: 16px; /* Reducir tamaño de los ítems de habilidades */
+    }
+
+    .contact-section form input,
+    .contact-section form textarea {
+        font-size: 14px;
+    }
+
+    .contact-section form button {
+        font-size: 14px;
+    }
+}
+
+/* Media Query para pantallas pequeñas (como teléfonos móviles) */
+@media screen and (max-width: 480px) {
+    header .header-content h1 {
+        font-size: 24px; /* Reducir aún más el tamaño en pantallas pequeñas */
+    }
+
+    header .header-content p {
+        font-size: 16px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+    }
+
+    .projects-section h2,
+    .skills-section h2,
+    .contact-section h2 {
+        font-size: 20px; /* Reducir el tamaño de los encabezados */
+    }
+
+    .profile-photo {
+        width: 100px; /* Reducir aún más el tamaño de la foto */
+        height: 100px;
+    }
+
+    .skills-section ul li {
+        font-size: 14px; /* Reducir aún más el tamaño de los ítems de habilidades */
+    }
+
+    .contact-section form button {
+        font-size: 12px; /* Reducir tamaño del botón */
+    }
+}
