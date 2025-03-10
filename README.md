@@ -18,7 +18,7 @@ Este es mi **portafolio web** personal, donde muestro algunos de mis proyectos m
 ## 🌐 Vista previa
 
 Puedes ver una vista en vivo de mi portafolio en el siguiente enlace:  
-[**Ver Portafolio en Vivo**](https://tu-enlace-aqui.com)
+
 
 ---
 
