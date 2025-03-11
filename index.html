@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Vincula tu archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <!-- Sección de la cabecera -->
+<body data-theme="light">
+   
+    <button class="theme-toggle" aria-label="Cambiar tema">
+        <span class="sun-icon">☀️</span>
+        <span class="moon-icon">🌙</span>
+    </button>
+
     <header>
         <nav>
             <ul>
@@ -19,71 +25,89 @@
         </nav>
         <div class="header-content">
             <h1>Hola, soy Freiler Ortega Estupiñan</h1>
-            <p>desarrollador de software semijunior</p>
+            <p>Desarrollador de Software Semijunior</p>
         </div>
     </header>
 
-    <!-- Sección sobre mí -->
-    <!-- Sección sobre mí -->
-<section id="about" class="about-section">
-    <h2>Sobre mí</h2>
-    <div class="about-content">
-        <img src="WhatsApp Image 2025-02-27 at 8.34.37 AM.jpeg" alt="Foto de [Tu Nombre]" class="profile-photo">
-        <p>Soy un apasionado del desarrollo web. Tengo experiencia en tecnologías como HTML, CSS, JavaScript y más. Siempre estoy buscando mejorar y aprender nuevas herramientas para mejorar mis habilidades.</p>
-    </div>
-</section>
-
-
-    <!-- Sección de proyectos -->
-    <section id="projects" class="projects-section">
-        <h2>Proyectos</h2>
-        <div class="project">
-            <h3>pokedex</h3>
-            <p>Descripción del Proyecto 1.</p>
-        </div>
-        <div class="project">
-            <h3>superheros</h3>
-            <p>Descripción del Proyecto 2.</p>
-        </div>
-        <div class="project">
-            <h3></h3>
-            <p>Descripción del Proyecto 2.</p>
+    
+    <section id="about" class="about-section">
+        <h2>Sobre mí</h2>
+        <div class="about-content">
+            <img src="IMG/FotoPerfil.jpeg" alt="Foto de Freiler Ortega" class="profile-photo">
+            <p>Soy un apasionado del desarrollo web. Tengo experiencia en tecnologías como HTML, CSS, JavaScript y más. Siempre estoy buscando mejorar y aprender nuevas herramientas para potenciar mis habilidades.</p>
         </div>
     </section>
 
-    <!-- Sección de habilidades -->
+  
+    <section id="projects" class="projects-section">
+        <h2>Proyectos</h2>
+        <div class="project-grid">
+            <div class="project">
+                <h3>Pokédex</h3>
+                <p>Una aplicación web interactiva para explorar Pokémon usando la PokéAPI.</p>
+                <img src="IMG/p.jpg" class="foto" ><img>
+            </div>
+            <div class="project">
+                <h3>Superhéroes</h3>
+                <p>Una galería dinámica de superhéroes con filtros y animaciones de forma ordenada.</p>
+                <img src="IMG/m.jpg" class="foto" ><img>
+            </div>
+            <div class="project">
+                <h3>spacex</h3>
+                <p>programa basado en la exitosa empresa spaceX que mestra su catalogo de naves y viajes </p>
+                <img src="IMG/s.jpg" class="foto" ><img>
+            </div>
+        </div>
+    </section>
+
+
     <section id="skills" class="skills-section">
         <h2>Habilidades</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>python</li>
-            <li>MYsql</li>
+        <ul class="skills-list">
+            <li>HTML
+                <img src="IMG/html5.png" alt="">
+            </li>
+            <li>CSS
+                <img src="IMG/formato-de-archivo-css.png" alt="">
+            </li>
+            <li>JavaScript
+                <img src="IMG/js.png" alt="">
 
+            </li>
+            <li>Python
+                <img src="IMG/archivo.png" alt="">
+
+            </li>
+            <li>MySQL
+                <img src="IMG/mysql.png" alt="">
+            </li>
         </ul>
     </section>
 
-    <!-- Sección de contacto -->
+
     <section id="contact" class="contact-section">
         <h2>Contacto</h2>
         <form action="mailto:tu-email@dominio.com" method="post" enctype="text/plain">
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" required>
-            
             <label for="email">Correo electrónico:</label>
             <input type="email" id="email" name="email" required>
-
             <label for="message">Mensaje:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
-
             <button type="submit">Enviar</button>
         </form>
     </section>
 
-    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2025 [Freiler Ortega ]. Todos los derechos reservados.</p>
+        <p>© 2025 Freiler Ortega. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+        const toggleButton = document.querySelector('.theme-toggle');
+        const body = document.body;
+        toggleButton.addEventListener('click', () => {
+            body.dataset.theme = body.dataset.theme === 'light' ? 'dark' : 'light';
+        });
+    </script>
 </body>
 </html>
