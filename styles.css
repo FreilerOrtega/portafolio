@@ -163,10 +163,11 @@ header nav ul li a:hover {
 .project-photo {
     width: 100%;
     max-width: 300px;
-    height: auto;
+    height: 200px;       /* altura fija */
     border-radius: 10px;
-    object-fit: cover;
+    object-fit: cover;   /* rellena recortando si es necesario */
     margin-top: 15px;
+    display: block;
 }
 
 
